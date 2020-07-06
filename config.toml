@@ -1,0 +1,134 @@
+baseURL = "https://example.com"
+title   = "Vishal Chauhan"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = true
+disableSitemap = true
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Vishal Chahuan"
+
+[blackfriday]
+  hrefTargetBlank = false
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "My portfolio"
+  keywords = ""
+  images = [""]
+
+homeSubtitle = """Just a simple dude who wants to create awesome stuff. 
+Whether it's solving a complex problem or hours of tweaking to create a website I aim for simple and intuitive approach so people can understand better.
+I completed by Bachelors in Computer Applications in 2019 and making projects in Python since my last year in college. I love learning and implementing new algorithms and I also do competitive programming daily to build my logical ability. I also build this website by myself, with the code only mother could love."""
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = ""
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Sharing buttons
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  enableSharingButtons = false
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+
+  # Default theme "light" or "dark"
+  defaultTheme = "light"
+  themeColor = "#252627"
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Uncomment this if you want a portrait on your start page
+  [params.portrait]
+    path = "/avatar.jpg"
+    alt  = "Portrait"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/vis_hal_?s=09"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:thakurvishal5111998@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/vishal8826"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/vishal-chauhan-3a093315b"
+
+  [[params.social]]
+    name = "telegram"
+    url  = "https://t.me/vis_hal"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Projects"
+    url        = "posts/"
